@@ -1,0 +1,12 @@
+{
+  "name": "workerinabox",
+  "version": "0.1.0",
+  "description": "Run Cloudflare worker in Docker",
+  "private": true,
+  "author": "Anastas Dancha <adancha@random.io>",
+  "license": "Proprietary - All Rights Reserved",
+  "dependencies": {
+    "@dollarshaveclub/cloudworker": "file:ext/cloudworker",
+    "unit-http": "^1.16.0"
+  }
+}

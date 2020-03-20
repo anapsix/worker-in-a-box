@@ -1,0 +1,13 @@
+name = "hello-world"
+type = "webpack"
+account_id = "4156512f45d14232990bd9e9a5d293f8"
+workers_dev = false
+webpack_config = "webpack.config.js"
+route = "dev.example.com/*"
+zone_id = "f3b1ff7bb5ec410dbe9edabe10329b28"
+
+[env.staging]
+route = "stg.example.com/*"
+
+[env.production]
+route = "www.example.com/*"

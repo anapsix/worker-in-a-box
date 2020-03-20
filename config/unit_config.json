@@ -1,0 +1,19 @@
+{
+  "listeners": {
+    "*:8080": {
+      "pass": "applications/node_app"
+    }
+  },
+  "applications": {
+    "node_app": {
+      "type": "external",
+      "working_directory": "/srv/worker/",
+      "executable": "launch_worker.js",
+      "limits": {
+        "timeout": 5,
+        "requests": 1000
+      },
+      "processes": 4
+    }
+  }
+}

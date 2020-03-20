@@ -1,0 +1,3 @@
+[submodule "ext/cloudworker"]
+	path = ext/cloudworker
+	url = git@github.com:anapsix/cloudworker.git
