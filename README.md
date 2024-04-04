@@ -1,7 +1,10 @@
 # worker-in-a-box
 
-[Cloudflare Workers][cloudflare-workers] are awesome! But what if you want to
-run workers in your dev environment, or in your own environment? Well, there is
+NOTE: please see Cloudflare's official [`workerd`][cf-workerd] for running
+Cloudflare Workers in local dev environment.
+
+[Cloudflare Workers][cf-workers] are awesome! But what if you want to run
+workers in your dev environment, or in your own environment? Well, there is
 a great project (albeit, unmaintained) from Dollar Shave Club - [cloudworker],
 which allows you to run Cloudflare Workers locally. Let's combine it with
 [Nginx Unit][nginx-unit], and run it in a Docker container.
@@ -46,7 +49,8 @@ docker run -it --rm -p 8080:8080 hello-world
 - improve ONBUILD process
 
 [link reference]::
-[cloudflare-workers]: https://workers.cloudflare.com/
+[cf-workerd]: https://github.com/cloudflare/workerd 
+[cf-workers]: https://workers.cloudflare.com/
 [cloudworker]: https://github.com/dollarshaveclub/cloudworker
 [nginx-unit]: https://unit.nginx.org/
 [hello-world]: ./examples/hello-world
